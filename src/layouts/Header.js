@@ -1,65 +1,97 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Navbar, Container, Button, Row, FormControl, Form } from 'react-bootstrap'
 import '../styles/Header.css'
-import logo from '../images/logo.png'
+import logo from '../images/logo5.png'
 import search from '../images/search.png'
-import heart1 from '../images/heart-regular.svg'
-import heart2 from '../images/heart-solid.svg'
+import emptyHeart from '../images/heart-regular.svg'
+import fullHeart from '../images/heart-solid.svg'
 
-// import Nav from '../layouts/Navigation'
+class Header extends Component {
+  state = {
+    emptyHeart: true
+  }
+
+  changeHeartIcon = () => {
+    if (this.state.emptyHeart) {
+      return emptyHeart
+    } else {
+      return fullHeart
+    }
+  }
+
+  changeHeartIconStatus = () => {
+
+    this.setState({
+      emptyHeart: false
+    })
+
+  }
+
+  render() {
+    return (
+
+      <Navbar className="haeder">
+        <Container>
+          <Navbar.Brand href="#home">
 
 
-const Header = () => {
-  return (
-    <Navbar bg="">
-      <Container>
-        <Navbar.Brand href="#home">
-          <img
-            src={logo}
-            // width="30"
-            height="100"
-            className="d-inline-block align-top"
-            alt="logo"
-          />
+            <div class="text-center">
+              <img
+                src={logo}
+                // width="30"
+                height="110"
+                // className="mt-2"
+                alt="logo"
+              />
+              {/* <h5 className="companyName">Adoption Center</h5> */}
+            </div>
 
 
-          <Form className="search22">
+
+
+
+            {/* <Form className="search22">
             <FormControl type="text" placeholder="Search" className="d-inline mt-1" />
             <Button variant="light" className="mx-1">Search</Button>
             <Button variant="light" className="">X</Button>
-          </Form>
+          </Form> */}
 
-          <div className="search">
+            <div className="search">
 
-            <Button variant="light">
-              <img
-                src={search}
-                height="25"
-                className=""
-                alt="search"
-              />
-            </Button>
+              <button className="light">
+                <img
+                  src={search}
+                  height="25"
+                  className=""
+                  alt="search"
+                />
+              </button>
 
-            <Button variant="light">
-              <img
-                src={heart1}
-                height="25"
-                className="mx-2"
-                alt="favorite"
-              />
-            </Button>
+              <button className="light" onClick={this.changeHeartIconStatus}>
+                <img
+                  src={this.changeHeartIcon()}
+                  height="25"
+                  className="mx-2"
+                  alt="favorite"
+                />
+              </button>
 
-            <Button variant="light">Log in</Button>
-            <Button variant="light">Sign Up</Button>
+              <button className="light">Log in</button>
+              <button className="light">Sign Up</button>
 
-          </div>
+            </div>
 
-        </Navbar.Brand>
-        
-      </Container>
-      
-    </Navbar>
-  )
+          </Navbar.Brand>
+
+        </Container>
+
+      </Navbar>
+
+    );
+  }
 }
 
-export default Header
+export default Header;
+
+
+

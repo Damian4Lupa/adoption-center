@@ -1,0 +1,44 @@
+html {
+    --normal: rgba(0, 123, 255, 0.8);
+    --active: rgba(0, 123, 255);
+}
+
+.navbar.navigation {
+    position: relative;
+    display: flex;
+    background-color: var(--normal);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    flex-flow: row nowrap;
+}
+
+.item {
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+}
+
+.item:hover {
+    text-decoration: none;
+    color: ivory;
+    background-color: var(--normal);
+    transition: all 0.5s ease 0s;
+}
+
+.active {
+    background-color: var(--active)
+}
+
+.float {
+    margin-left: 9vw
+}
+
+.companyName {
+    font-family: 'Carter One', cursive;
+    /* color: rgba(1, 79, 163, 0.801); */
+    color: white;
+    margin: 0 4rem 0 4rem;
+    padding-bottom: 0;
+}
