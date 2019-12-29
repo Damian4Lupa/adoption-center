@@ -32,10 +32,11 @@ html {
 }
 
 .float {
-    margin-left: 9vw
+    margin-left: 22vw
 }
 
 .companyName {
+    position: absolute;
     font-family: 'Carter One', cursive;
     /* color: rgba(1, 79, 163, 0.801); */
     color: white;

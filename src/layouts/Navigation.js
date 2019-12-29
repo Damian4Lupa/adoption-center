@@ -42,10 +42,10 @@ class Navigation extends Component {
 
         <Container>
 
-          <Nav className="" onClick={this.changeItemStyle}>
-           
-              <h4 className="companyName">Adoption Center</h4>
-      
+          <h4 className="companyName">Adoption Center</h4>
+
+          <Nav className="float" onClick={this.changeItemStyle}>
+
             <Nav.Item>
               <Link to="/" id="1" className="active item" onClick={this.changeItemId}>
                 How we help</Link>
