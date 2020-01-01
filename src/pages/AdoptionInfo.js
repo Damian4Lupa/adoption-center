@@ -3,7 +3,6 @@ import { Container } from 'react-bootstrap'
 
 const AdoptionInfo = () => {
 
-
     return (
         
         <Container>

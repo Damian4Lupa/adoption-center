@@ -25,10 +25,10 @@ class Navigation extends Component {
     let stateId = this.state.itemId // stare id
 
     if (targetId == stateId) {
-      $(`#${stateId}`).addClass("active")
+      $(`#${stateId}`).addClass("activeNav")
     } else if (targetId != stateId) {
-      $(`#${stateId}`).removeClass("active")
-      $(`#${targetId}`).addClass("active")
+      $(`#${stateId}`).removeClass("activeNav")
+      $(`#${targetId}`).addClass("activeNav")
     }
   }
 
@@ -47,7 +47,7 @@ class Navigation extends Component {
           <Nav className="float" onClick={this.changeItemStyle}>
 
             <Nav.Item>
-              <Link to="/" id="1" className="active item" onClick={this.changeItemId}>
+              <Link to="/" id="1" className="activeNav item" onClick={this.changeItemId}>
                 How we help</Link>
             </Nav.Item>
             <Nav.Item>

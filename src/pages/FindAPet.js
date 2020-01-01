@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Container, Form, InputGroup, Button, FormControl } from 'react-bootstrap'
 import '../styles/pages.css'
+import Slider from '../components/SliderSelectTypeOfPets'
 
 class FindAPet extends Component {
 
@@ -12,23 +13,22 @@ class FindAPet extends Component {
       <Container>
 
         <Row>
-          <Col sm={4} className="mt-4 mb-4">
+          <Col sm={3} className="mt-4 mb-4">
 
-            <Form.Group as={Row} controlId="selectType">
+            {/* <Form.Group as={Row} controlId="selectType">
               <Form.Label column sm="6">
                 I would like to adopt a
               </Form.Label>
               <Col sm="4">
-
                 <Form.Control as="select">
                   <option>cat</option>
                   <option>dog</option>
                   <option>rabbit</option>
-
                 </Form.Control>
-
               </Col>
-            </Form.Group>
+            </Form.Group> */}
+
+            <Slider />
 
 
 
