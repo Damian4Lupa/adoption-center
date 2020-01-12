@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Navbar, Container, Button, Row, FormControl, Form } from 'react-bootstrap'
 import '../styles/Header.css'
-import logo from '../images/logo5.png'
-import search from '../images/search.png'
-import emptyHeart from '../images/heart-regular.svg'
-import fullHeart from '../images/heart-solid.svg'
+import logo from '../images/website/logo.png'
+import search from '../images/website/search.png'
+import emptyHeart from '../images/website/heart-regular.svg'
+import fullHeart from '../images/website/heart-solid.svg'
 
 class Header extends Component {
   state = {

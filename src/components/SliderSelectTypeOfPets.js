@@ -1,80 +1,118 @@
 import React, { Component } from 'react';
-import { Carousel } from 'react-bootstrap'
+// import { Carousel } from 'react-bootstrap'
 import '../styles/Slider.css'
-import dog from '../images/dog.png'
-import cat from '../images/cat.png'
-import rabbit from '../images/rabbit.png'
-import next from "../images/icons/angle-right.svg"
-import prev from "../images/icons/angle-left.svg"
+import $ from 'jquery'
+import dog from '../images/website/dog.png'
+import cat from '../images/website/cat.png'
+import rabbit from '../images/website/rabbit.png'
+import next from "../images/website/angle-right.svg"
+import prev from "../images/website/angle-left.svg"
 
 
 class Slider extends Component {
 
+  state = {
+    id: 1,
+    prevId: 1,
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+
+    let prevId = prevState.id
+
+    if (this.state.id != prevId) {
+      this.setState({
+        prevId
+      })
+    }
+
+  }
+
+  changeId = event => {
+
+    event.preventDefault()
+    let oldId = this.state.id
+    let newId = 1
+    let action = event.target.name
+
+    if (action === "subtract") {
+      newId = oldId - 1
+      if (newId === 0) {
+        newId = 3
+      }
+    } else if (action === "add") {
+      newId = oldId + 1
+      if (newId === 4) {
+        newId = 1
+      }
+    }
+
+    // console.log(action)
+    // console.log("oldId", oldId)
+    // console.log("newId", newId)
+
+    this.setState({
+      id: newId
+    })
+
+  }
+
+  changeImg = () => {
+
+    let id = this.state.id
+    let prevId = this.state.prevId
+
+    $(`.carousel-item:nth-of-type(${id})`).toggleClass("active")
+    $(`.carousel-item:nth-of-type(${prevId})`).toggleClass("active")
+
+
+
+  }
+
+  changeItem = () => {
+
+    let id = this.state.id
+    let prevId = this.state.prevId
+
+    $(`.carousel-indicators li:nth-child(${id})`).toggleClass("active")
+    $(`.carousel-indicators li:nth-child(${prevId})`).toggleClass("active")
+
+  }
+
+
+
   render() {
+
+    // console.log("id", this.state.id)
+    // console.log("prev-id", this.state.prevId)
 
     return (
 
-      // <Carousel>
-
-      //   <Carousel.Item>
-      //     <img
-      //       className="d-block w-100 abc"
-      //       src={dog}
-      //       alt="dog"
-      //     />
-      //     <Carousel.Caption>
-      //       <h5>Dog</h5>
-
-      //     </Carousel.Caption>
-      //   </Carousel.Item>
-
-      //   <Carousel.Item>
-      //     <img
-      //       className="d-block w-100 abc"
-      //       src={cat}
-      //       alt="cat"
-      //     />
-
-      //     <Carousel.Caption>
-      //       <h5>cat</h5>
-
-      //     </Carousel.Caption>
-      //   </Carousel.Item>
-
-      //   <Carousel.Item>
-      //     <img
-      //       className="d-block w-100 abc"
-      //       src={rabbit}
-      //       alt="rabbit"
-      //     />
-
-      //     <Carousel.Caption>
-      //       <h5>rabbit</h5>
-
-      //     </Carousel.Caption>
-      //   </Carousel.Item>
-      // </Carousel>
-
       <div class="carousel slide">
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators" onChange={this.changeItem()}>
+          <li class="active" ></li>
           <li></li>
-          <li class="active"></li>
           <li></li>
         </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item">
+
+        <div
+          class="carousel-inner"
+          onChange={this.changeImg()}
+        >
+
+          <div class="active carousel-item">
             <img
+
               class="d-block w-100 abc"
               src={dog}
               alt="dog"
             />
-
             <div class="carousel-caption">
               <h5>Dog</h5>
             </div>
           </div>
 
-          <div class="active carousel-item">
+          <div class="carousel-item">
             <img
               class="d-block w-100 abc"
               src={cat}
@@ -84,6 +122,7 @@ class Slider extends Component {
               <h5>cat</h5>
             </div>
           </div>
+
           <div class="carousel-item">
             <img
               class="d-block w-100 abc"
@@ -94,28 +133,36 @@ class Slider extends Component {
               <h5>rabbit</h5>
             </div>
           </div>
+
         </div>
 
-        <a class="carousel-control-prev" role="button" href="#">
-          {/* <span aria-hidden="true" class="carousel-control-prev-icon">
-          </span>
-          <span class="sr-only">Previous</span> */}
-            <img
+        <a
+          class="carousel-control-prev"
+          role="button" href="#"
+          onClick={this.changeId}
+        >
+
+          <img
+            name="subtract"
             src={prev}
             alt="next"
             class="w-50"
           />
         </a>
 
-        <a class="carousel-control-next" role="button" href="#">
-          {/* <span aria-hidden="true" class="carousel-control-next-icon">
-          </span> */}
+        <a
+
+          class="carousel-control-next"
+          role="button" href="#"
+          onClick={this.changeId}
+        >
+
           <img
+            name="add"
             src={next}
             alt="next"
             class="w-50"
           />
-          {/* <span class="sr-only">Next</span> */}
         </a>
 
       </div>

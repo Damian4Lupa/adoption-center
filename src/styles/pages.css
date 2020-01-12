@@ -6,9 +6,8 @@
 }
 
 .bbb {
-    background-image: url('../images/search.png');
+    background-image: url('../images/website/search.png');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 0 15px;
 }

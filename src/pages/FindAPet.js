@@ -2,35 +2,43 @@ import React, { Component } from 'react';
 import { Row, Col, Container, Form, InputGroup, Button, FormControl } from 'react-bootstrap'
 import '../styles/pages.css'
 import Slider from '../components/SliderSelectTypeOfPets'
+import Rabbit from '../components/Rabbit'
+// import Cat from '../components/'
+// import Test from '../components/test'
 
 class FindAPet extends Component {
 
+  state = {
+    breed: "",
+    age: "",
+    gender: "",
+    goodWith: "",
+    careAndBehavior: "",
+    petName: "",
+  }
+
+  changeValue = event => {
+
+    const name = event.target.name
+    const value = event.target.value
+
+    this.setState({
+      [name]: value
+    })
+
+  }
 
   render() {
-
+    console.log(this.state.breed)
     return (
 
       <Container>
 
         <Row>
-          <Col sm={3} className="mt-4 mb-4">
-
-            {/* <Form.Group as={Row} controlId="selectType">
-              <Form.Label column sm="6">
-                I would like to adopt a
-              </Form.Label>
-              <Col sm="4">
-                <Form.Control as="select">
-                  <option>cat</option>
-                  <option>dog</option>
-                  <option>rabbit</option>
-                </Form.Control>
-              </Col>
-            </Form.Group> */}
+          <Col sm={3} className="mt-4">
 
             <Slider />
-
-
+            {/* <Test /> */}
 
           </Col>
 
@@ -40,78 +48,7 @@ class FindAPet extends Component {
 
           <Col sm={3}>
 
-            <Form>
-
-              <Form.Group className="aaa" controlId="breed">
-                <Form.Label>BREED</Form.Label>
-                <Form.Control as="select">
-                  <option>American</option>
-                  <option>Bunny Rabbit</option>
-                  <option>Dutch</option>
-                  <option>Dwarf</option>
-                  <option>English Spot</option>
-                  <option>Lionhead</option>
-                  <option>New Zealand</option>
-                  <option>Rex</option>
-                </Form.Control>
-              </Form.Group>
-
-              <Form.Group className="aaa" controlId="age">
-                <Form.Label>AGE</Form.Label>
-                <Form.Control as="select">
-                  <option>Baby</option>
-                  <option>Young</option>
-                  <option>Adult</option>
-                  <option>Senior</option>
-
-                </Form.Control>
-              </Form.Group>
-
-              <Form.Group className="aaa" controlId="gender">
-                <Form.Label>GENDER</Form.Label>
-                <Form.Control as="select">
-                  <option>Male</option>
-                  <option>Female</option>
-
-                </Form.Control>
-              </Form.Group>
-
-              <Form.Group className="aaa" controlId="goodWith">
-                <Form.Label>GOOD WITH</Form.Label>
-                <Form.Control as="select">
-                  <option>Kids</option>
-                  <option>Dogs</option>
-                  <option>Cats</option>
-                </Form.Control>
-              </Form.Group>
-
-              <Form.Group className="aaa" controlId="careAndBehavior">
-                <Form.Label>CARE & BEHAVIOR</Form.Label>
-                <Form.Control as="select">
-                  <option>House-trained</option>
-                  <option>Special Needs</option>
-                </Form.Control>
-              </Form.Group>
-
-              <Form.Group className="aaa" controlId="petName">
-                <Form.Label>PET NAME</Form.Label>
-                <InputGroup className="mb-3" >
-                  <FormControl
-
-                    id="pet-name"
-                    aria-describedby="basic-addon2"
-                  />
-                  <InputGroup.Append>
-                    <Button variant="outline-secondary" className="bbb" />
-                  </InputGroup.Append>
-                </InputGroup>
-              </Form.Group>
-
-
-
-
-
-            </Form>
+            <Rabbit />
 
           </Col>
           <Col sm={9}>

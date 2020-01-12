@@ -12,6 +12,34 @@
    color: black;
 }
 
+
+.carousel-inner {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+}
+
+.carousel-item {
+   position: relative;
+   display: none;
+   float: left;
+   width: 100%;
+   margin-right: -100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   transition: all 1s ease-in-out;
+}
+
+.carousel-inner::after {
+   display: block;
+   clear: both;
+   content: "";
+}
+
+.carousel-item .active, .carousel-item-next, .carousel-item-prev {
+   display: block;
+}
+
 .carousel-indicators {
    position: absolute;
    right: 0;
@@ -76,11 +104,11 @@ ol, ul, dl {
 }
 
 .carousel-control-next-icon {
-   background-image: url('../images/icons/angle-right.svg');
+   background-image: url('../images/website/angle-right.svg');
    color: black;
 }
 
 .carousel-control-prev-icon {
-   background-image: url('../images/icons/angle-left.svg');
+   background-image: url('../images/website/angle-left.svg');
 }
 
