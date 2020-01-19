@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Container, Form, InputGroup, Button, FormControl } from 'react-bootstrap'
-import '../styles/pages.css'
+import '../styles/Pages.css'
 import Slider from '../components/SliderSelectTypeOfPets'
 import Rabbit from '../components/Rabbit'
 // import Cat from '../components/'

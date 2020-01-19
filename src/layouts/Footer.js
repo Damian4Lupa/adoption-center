@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/Footer.css'
+import { Link } from 'react-router-dom';
+import { Container, Row } from 'react-bootstrap'
 
 import envelope from '../images/website/envelope.svg'
 import facebook from '../images/website/facebook.svg'
@@ -12,14 +14,14 @@ const Footer = () => {
 
   return (
 
-    <footer id="footer" class="footer-1 mt-5">
-      <div class="main-footer widgets-dark typo-light">
-        <div class="container">
-          <div class="row">
+    <footer id="footer" className="footer-1 mt-5">
+      <div className="main-footer widgets-dark typo-light">
+        <Container>
+          <Row>
 
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="widget subscribe no-box">
-                <h5 class="widget-title mt-3">Adoption Center<span></span></h5>
+            <div className="col-xs-12 col-sm-6 col-md-3">
+              <div className="widget subscribe no-box">
+                <h5 className="widget-title mt-3">Adoption Center<span></span></h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid repellat</p>
               </div>
 
@@ -30,47 +32,48 @@ const Footer = () => {
 
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="widget no-box">
-                <h5 class="widget-title mt-3">Quick Links<span></span></h5>
-                <ul class="thumbnail-widget">
+            <div className="col-xs-12 col-sm-6 col-md-3">
+              <div className="widget no-box">
+                <h5 className="widget-title mt-3">Quick Links<span></span></h5>
+                <ul className="thumbnail-widget">
+
                   <li>
-                    <div class="thumb-content"><a href="#.">How we help</a></div>
+                    <div className="thumb-content"><Link to="/">How we help</Link></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">Find a Pet</a></div>
+                    <div className="thumb-content"><Link to="/FindAPet">Find a Pet</Link></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">Adoption info</a></div>
+                    <div className="thumb-content"><Link to="/AdoptionInfo">Adoption info</Link></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">Pet Care & Health</a></div>
+                    <div className="thumb-content"><Link to="/PetCareAndHealth">Pet Care & Health</Link></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">Get Involved</a></div>
+                    <div className="thumb-content"><Link to="/GetInvolved">Get Involved</Link></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">Contact</a></div>
+                    <div className="thumb-content"><Link to="/Contact">Contact</Link></div>
                   </li>
 
                 </ul>
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="widget no-box">
-                <h5 class="widget-title mt-3">Get Started<span></span></h5>
+            <div className="col-xs-12 col-sm-6 col-md-3">
+              <div className="widget no-box">
+                <h5 className="widget-title mt-3">Get Started<span></span></h5>
                 <p>Get access to your full Training and Marketing Suite.</p>
 
-                <button class="btn btn-register mt-2">Register Now</button>
-                
+                <button className="btn btn-register mt-2">Register Now</button>
+
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div className="col-xs-12 col-sm-6 col-md-3">
 
-              <div class="widget no-box">
-                <h5 class="widget-title mt-3">Contact Us<span></span></h5>
+              <div className="widget no-box">
+                <h5 className="widget-title mt-3">Contact Us<span></span></h5>
 
                 <p>Adopt Center Foundation, 25 Lorem ipsum street, 35-589 Lorem ipsum</p>
 
@@ -78,25 +81,25 @@ const Footer = () => {
 
                 <p><img src={phone} alt="phone" width="25" className="social mr-2" />(541) 754-3010</p>
 
-                <div class="social-footer2">
+                <div className="social-footer2">
 
 
                 </div>
               </div>
             </div>
 
-          </div>
-        </div>
+          </Row>
+        </Container>
       </div>
 
-      <div class="footer-copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
+      <div className="footer-copyright">
+        <Container>
+          <Row>
+            <div className="col-md-12 text-center">
               <p>Adoption Center © 2020. All rights reserved.</p>
             </div>
-          </div>
-        </div>
+          </Row>
+        </Container>
       </div>
     </footer>
   )

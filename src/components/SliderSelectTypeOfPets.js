@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { Carousel } from 'react-bootstrap'
 import '../styles/Slider.css'
 import $ from 'jquery'
+
 import dog from '../images/website/dog.png'
 import cat from '../images/website/cat.png'
 import rabbit from '../images/website/rabbit.png'
@@ -79,57 +80,52 @@ class Slider extends Component {
 
   }
 
-
-
   render() {
-
-    // console.log("id", this.state.id)
-    // console.log("prev-id", this.state.prevId)
 
     return (
 
-      <div class="carousel slide">
-        <ol class="carousel-indicators" onChange={this.changeItem()}>
-          <li class="active" ></li>
+      <div className="carousel slide">
+        <ol className="carousel-indicators" onChange={this.changeItem()}>
+          <li className="active" ></li>
           <li></li>
           <li></li>
         </ol>
 
         <div
-          class="carousel-inner"
+          className="carousel-inner"
           onChange={this.changeImg()}
         >
 
-          <div class="active carousel-item">
+          <div className="active carousel-item">
             <img
 
-              class="d-block w-100 abc"
+              className="d-block w-100 abc"
               src={dog}
               alt="dog"
             />
-            <div class="carousel-caption">
+            <div className="carousel-caption">
               <h5>Dog</h5>
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div className="carousel-item">
             <img
-              class="d-block w-100 abc"
+              className="d-block w-100 abc"
               src={cat}
               alt="cat"
             />
-            <div class="carousel-caption">
+            <div className="carousel-caption">
               <h5>cat</h5>
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div className="carousel-item">
             <img
-              class="d-block w-100 abc"
+              className="d-block w-100 abc"
               src={rabbit}
               alt="rabbit"
             />
-            <div class="carousel-caption">
+            <div className="carousel-caption">
               <h5>rabbit</h5>
             </div>
           </div>
@@ -137,7 +133,7 @@ class Slider extends Component {
         </div>
 
         <a
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           role="button" href="#"
           onClick={this.changeId}
         >
@@ -146,13 +142,12 @@ class Slider extends Component {
             name="subtract"
             src={prev}
             alt="next"
-            class="w-50"
+            className="w-50"
           />
         </a>
 
         <a
-
-          class="carousel-control-next"
+          className="carousel-control-next"
           role="button" href="#"
           onClick={this.changeId}
         >
@@ -161,15 +156,11 @@ class Slider extends Component {
             name="add"
             src={next}
             alt="next"
-            class="w-50"
+            className="w-50"
           />
         </a>
 
       </div>
-
-
-
-
     )
   }
 }

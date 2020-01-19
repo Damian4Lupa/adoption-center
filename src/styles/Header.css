@@ -2,10 +2,8 @@
     height: 17vh;
 }
 
-.companyName {
-    font-family: 'Carter One', cursive;
-    /* color: rgba(1, 79, 163, 0.801); */
-    color: white;
+.logo {
+    margin-left: -1.5rem;
 }
 
 .search {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Container, Button, Row, FormControl, Form } from 'react-bootstrap'
+import { Navbar, Container } from 'react-bootstrap'
 import '../styles/Header.css'
 import logo from '../images/website/logo.png'
 import search from '../images/website/search.png'
@@ -34,27 +34,13 @@ class Header extends Component {
         <Container>
           <Navbar.Brand href="#home">
 
-
-            <div class="text-center">
+            <div className="logo">
               <img
                 src={logo}
-                // width="30"
                 height="110"
-                // className="mt-2"
                 alt="logo"
               />
-              {/* <h5 className="companyName">Adoption Center</h5> */}
             </div>
-
-
-
-
-
-            {/* <Form className="search22">
-            <FormControl type="text" placeholder="Search" className="d-inline mt-1" />
-            <Button variant="light" className="mx-1">Search</Button>
-            <Button variant="light" className="">X</Button>
-          </Form> */}
 
             <div className="search">
 
@@ -62,7 +48,6 @@ class Header extends Component {
                 <img
                   src={search}
                   height="25"
-                  className=""
                   alt="search"
                 />
               </button>
@@ -82,11 +67,8 @@ class Header extends Component {
             </div>
 
           </Navbar.Brand>
-
         </Container>
-
       </Navbar>
-
     );
   }
 }
