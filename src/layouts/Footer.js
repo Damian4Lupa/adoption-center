@@ -23,10 +23,10 @@ const Footer = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid repellat</p>
               </div>
 
-              <button><img className="social" src={facebook} alt="facebook" width="30" /></button>
-              <button><img src={twitter} alt="twitter" width="30" className="social" /></button>
-              <button><img src={youtube} alt="youtube" width="30" className="social" /></button>
-              <button><img src={google} alt="google" width="30" className="social" /></button>
+              <button className="btn btn-social"><img src={facebook} alt="facebook" width="30" className="social" /></button>
+              <button className="btn btn-social"><img src={twitter} alt="twitter" width="30" className="social" /></button>
+              <button className="btn btn-social"><img src={youtube} alt="youtube" width="30" className="social" /></button>
+              <button className="btn btn-social">  <img src={google} alt="google" width="30" className="social" /></button>
 
             </div>
 
@@ -61,7 +61,9 @@ const Footer = () => {
               <div class="widget no-box">
                 <h5 class="widget-title mt-3">Get Started<span></span></h5>
                 <p>Get access to your full Training and Marketing Suite.</p>
-                <a class="btn" href="#." target="_blank">Register Now</a>
+
+                <button class="btn btn-register mt-2">Register Now</button>
+                
               </div>
             </div>
 
@@ -70,9 +72,7 @@ const Footer = () => {
               <div class="widget no-box">
                 <h5 class="widget-title mt-3">Contact Us<span></span></h5>
 
-                <p>Adopt Center Foundation,
-                25 Lorem ipsum street,
-               35-589 Lorem ipsum</p>
+                <p>Adopt Center Foundation, 25 Lorem ipsum street, 35-589 Lorem ipsum</p>
 
                 <p><img src={envelope} alt="envelope" width="25" className="social mr-2" />info@adoptcenter.com</p>
 
