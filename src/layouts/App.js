@@ -19,8 +19,6 @@ function App() {
     <Router>
       <HashRouter basename={"/"}>
 
-        {/* <div className="site-container"> */}
-
           <Header />
           <Navigation />
 
@@ -35,10 +33,7 @@ function App() {
           </Switch>
 
           <Footer />
-        {/* </div> */}
-
-
-
+    
       </HashRouter>
     </Router>
   );

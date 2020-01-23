@@ -213,3 +213,7 @@ transition: all 250ms ease-in-out 0s;
     color: var(--active);
     text-decoration: none;
 }
+
+.social-float {
+    margin-left: -1rem;
+}

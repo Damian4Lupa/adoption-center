@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import '../styles/Counter.css'
 
 import handsHelping from '../images/website/hands-helping.svg'

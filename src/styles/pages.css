@@ -1,9 +1,4 @@
 
-.slider-top{
-    /* display: block; */
-    /* margin-top: 0vh; */
-    /* min-height: 20vh; */
-}
 
 .aaa {
     text-align: center;
@@ -42,3 +37,60 @@
 .marketing p {
     text-align: justify;
 }
+
+
+/* showcase */
+
+.showcase {
+    padding: 0 !important;
+}
+
+.showcase h2 {
+    text-align: center; 
+}
+
+.showcase p {
+    text-align: justify;
+}
+
+.showcase .showcase-text {
+    padding: 5rem !important;
+  }
+  
+  .showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+  }
+  
+.test {
+    background-image: url('../images/testFoto.jpg');
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+  @media (min-width: 768px) {
+    .showcase .showcase-text {
+      padding: 7rem;
+    }
+  }
+
+
+  /* testimonials */
+
+  .team {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+  
+  .team .team-item {
+    max-width: 18rem;
+  }
+  
+  .team .team-item img {
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+  }
+

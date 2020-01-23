@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
 
-    <footer id="footer" className="footer-1 mt-5">
+    <footer id="footer" className="footer-1">
       <div className="main-footer widgets-dark typo-light">
         <Container>
           <Row>
@@ -25,7 +25,7 @@ const Footer = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid repellat</p>
               </div>
 
-              <button className="btn btn-social"><img src={facebook} alt="facebook" width="30" className="social" /></button>
+              <button className="btn btn-social social-float"><img src={facebook} alt="facebook" width="30" className="social" /></button>
               <button className="btn btn-social"><img src={twitter} alt="twitter" width="30" className="social" /></button>
               <button className="btn btn-social"><img src={youtube} alt="youtube" width="30" className="social" /></button>
               <button className="btn btn-social">  <img src={google} alt="google" width="30" className="social" /></button>
@@ -62,10 +62,10 @@ const Footer = () => {
 
             <div className="col-xs-12 col-sm-6 col-md-3">
               <div className="widget no-box">
-                <h5 className="widget-title mt-3">Get Started<span></span></h5>
+                <h5 className="widget-title mt-3">Donane<span></span></h5>
                 <p>Get access to your full Training and Marketing Suite.</p>
 
-                <button className="btn btn-register mt-2">Register Now</button>
+                <button className="btn btn-register mt-2">Help us</button>
 
               </div>
             </div>
@@ -82,7 +82,6 @@ const Footer = () => {
                 <p><img src={phone} alt="phone" width="25" className="social mr-2" />(541) 754-3010</p>
 
                 <div className="social-footer2">
-
 
                 </div>
               </div>
