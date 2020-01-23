@@ -1,0 +1,75 @@
+html {
+    --normal: rgba(0, 123, 255, 0.8);
+    --active: rgba(1, 100, 206);
+    /* --active: rgba(0, 123, 255); */
+}
+
+.ts_counter_bg .facts {
+    padding: 0 15px;
+  }
+  
+  .ts_counter_bg .facts:hover {
+    background: none !important;
+  }
+  
+  .ts_counter_bg .facts-num span {
+    margin: 30px 0 20px;
+  }
+  
+  .ts_counter.elements .facts {
+    padding: 15px;
+  }
+
+  .facts-wrapper {
+    background: var(--normal);
+    color: #fff;
+  }
+  
+  .facts {
+    position: relative;
+    padding: 2rem;
+    /* padding: 46px 40px 30px; */
+    transition: all 300ms ease;
+  }
+  
+  .facts:hover {
+    background: var(--active) !important;
+  }
+  
+  .facts.one {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .facts.two {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .facts.three {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  
+  .facts.four {
+    background: rgba(0, 0, 0, 0.09);
+  }
+  
+  .facts i {
+    font-size: 36px;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .facts-num span {
+    font-size: 42px;
+    font-weight: 700;
+    /* margin-top: 20px; */
+    display: inline-block;
+  }
+  
+  .facts h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    color: #fff;
+  }
+
+.facts img {
+    filter: invert(1)
+}

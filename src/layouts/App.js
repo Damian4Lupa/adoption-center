@@ -19,20 +19,25 @@ function App() {
     <Router>
       <HashRouter basename={"/"}>
 
-        <Header />
-        <Navigation />
+        {/* <div className="site-container"> */}
 
-        <Switch>
-          <Route exact path="/" component={HowWeHelp} />
-          <Route path="/AdoptionInfo" component={AdoptionInfo} />
-          <Route path="/Contact" component={Contact} />
-          <Route path="/FindAPet" component={FindAPet} />
-          <Route path="/GetInvolved" component={GetInvolved} />
-          <Route path="/PetCareAndHealth" component={PetCareAndHealth} />
-          {/* <Route component={ErrorPage} /> */}
-        </Switch>
+          <Header />
+          <Navigation />
 
-        <Footer />
+          <Switch>
+            <Route exact path="/" component={HowWeHelp} />
+            <Route path="/AdoptionInfo" component={AdoptionInfo} />
+            <Route path="/Contact" component={Contact} />
+            <Route path="/FindAPet" component={FindAPet} />
+            <Route path="/GetInvolved" component={GetInvolved} />
+            <Route path="/PetCareAndHealth" component={PetCareAndHealth} />
+            {/* <Route component={ErrorPage} /> */}
+          </Switch>
+
+          <Footer />
+        {/* </div> */}
+
+
 
       </HashRouter>
     </Router>

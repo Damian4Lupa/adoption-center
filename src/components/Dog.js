@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Form, InputGroup, Button, FormControl } from 'react-bootstrap'
-import '../styles/pages.css'
+import '../styles/Pages.css'
 
 class Dog extends Component {
 

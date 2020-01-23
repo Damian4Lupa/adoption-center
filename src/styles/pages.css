@@ -1,3 +1,10 @@
+
+.slider-top{
+    /* display: block; */
+    /* margin-top: 0vh; */
+    /* min-height: 20vh; */
+}
+
 .aaa {
     text-align: center;
     vertical-align: middle;
@@ -10,4 +17,28 @@
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+/* HowWeHelp */
+
+.marketing {
+    margin-top: 4rem;
+}
+
+.marketing img {
+    margin-top: 2rem;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.marketing h2 {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.marketing p {
+    text-align: justify;
 }

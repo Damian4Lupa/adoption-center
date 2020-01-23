@@ -4,7 +4,6 @@ import '../styles/Pages.css'
 import Slider from '../components/SliderSelectTypeOfPets'
 import Rabbit from '../components/Rabbit'
 // import Cat from '../components/'
-// import Test from '../components/test'
 
 class FindAPet extends Component {
 
@@ -38,7 +37,6 @@ class FindAPet extends Component {
           <Col sm={3} className="mt-4">
 
             <Slider />
-            {/* <Test /> */}
 
           </Col>
 
