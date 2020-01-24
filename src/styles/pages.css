@@ -78,7 +78,7 @@
   }
 
 
-  /* testimonials */
+  /* team */
 
   .team {
     padding-top: 5rem;
@@ -94,3 +94,10 @@
     box-shadow: 0px 5px 5px 0px #adb5bd;
   }
 
+/* map */
+
+#map {
+  overflow:hidden;
+  height:400px;
+  width:520px;
+}
