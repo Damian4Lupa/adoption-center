@@ -96,21 +96,26 @@
 
 /* Contact */
 
-/* .adres {
-  display: inline-block;
-} */
+.adress {
+  margin-top: 5rem;
+}
 
 #map {
   height: 25rem;
  width: 50rem;
 }
 
-.adres p {
+.adress p {
   /* display: inline-block; */
   margin-left: 3rem;
 }
 
-.adres img {
+.adress img {
   position: absolute;
   display: inline-block;
+  filter: invert(0.4);
+}
+
+.submit {
+  margin-bottom: 100px;
 }
