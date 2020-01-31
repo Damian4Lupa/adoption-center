@@ -43,33 +43,32 @@ class Contact extends Component {
                     </Col>
                     <Col sm={9} className="mt-5">
 
-                        <div id="map" />
+                        <iframe className="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.106711,17.026858&output=embed"></iframe>
 
                     </Col>
                 </Row>
 
-                <h4 className="text-center mt-5 mb-2">Write to us</h4>
+                <h4 className="text-center adress mb-4">Write to us</h4>
 
-                <Form className="my-4">
+                <Form className="writeToUs my-4">
 
                     <Form.Row>
-                        <Col xs={6}>
-                            <Form.Group controlId="email">
+                        <Col xs={5}>
+                            <Form.Group className="ml-3 mt-3" controlId="email">
                                 <Form.Control type="email" placeholder="email" />
                             </Form.Group>
 
 
-                            <Form.Group controlId="subject">
-
+                            <Form.Group className="ml-3 mt-3" controlId="subject">
                                 <Form.Control type="text" placeholder="subject" />
                             </Form.Group>
 
                         </Col>
-                        <Col xs={6}>
+                        <Col xs={7}>
 
-                            <Form.Group controlId="message">
+                            <Form.Group className="mr-3 mt-3" controlId="message">
 
-                                <Form.Control placeholder="message" as="textarea" rows="3" />
+                                <Form.Control className="message" placeholder="message" as="textarea" />
 
                             </Form.Group>
 
@@ -79,7 +78,7 @@ class Contact extends Component {
                         <Col sm={10}></Col>
 
                         <Col sm={2}>
-                            <Form.Group controlId="button" className="mb-5 mt-2">
+                            <Form.Group controlId="button" className="mb-4 mt-2">
                                 <Button variant="outline-primary" className="mr-3">Clear</Button>
                                 <Button variant="primary" type="submit" >Submit</Button>
                             </Form.Group>
