@@ -8,11 +8,27 @@ import envelope from '../images/website/envelope.svg'
 import skype from '../images/website/skype.svg'
 
 class Contact extends Component {
-    state = {}
+    state = {
+        contactEmail: "",
+        contactSubject: "",
+        contactMessage: "",
+    }
 
+    changeValue = event => {
 
+        let name = event.target.name
+        let value = event.target.value
+
+        this.setState({
+            [name]: value
+        })
+
+    }
 
     render() {
+
+        const { contactEmail, contactSubject, contactMessage } = this.state
+
         return (
             <Container>
 
@@ -55,12 +71,20 @@ class Contact extends Component {
                     <Form.Row>
                         <Col xs={5}>
                             <Form.Group className="ml-3 mt-3" controlId="email">
-                                <Form.Control type="email" placeholder="email" />
+                                <Form.Control type="email" placeholder="email"
+                                    name="contactEmail"
+                                    value={contactEmail}
+                                    onChange={this.changeValue}
+                                />
                             </Form.Group>
 
 
                             <Form.Group className="ml-3 mt-3" controlId="subject">
-                                <Form.Control type="text" placeholder="subject" />
+                                <Form.Control type="text" placeholder="subject"
+                                    name="contactSubject"
+                                    value={contactSubject}
+                                    onChange={this.changeValue}
+                                />
                             </Form.Group>
 
                         </Col>
@@ -68,7 +92,11 @@ class Contact extends Component {
 
                             <Form.Group className="mr-3 mt-3" controlId="message">
 
-                                <Form.Control className="message" placeholder="message" as="textarea" />
+                                <Form.Control className="message" placeholder="message" as="textarea"
+                                    name="contactMessage"
+                                    value={contactMessage}
+                                    onChange={this.changeValue}
+                                />
 
                             </Form.Group>
 
@@ -78,9 +106,12 @@ class Contact extends Component {
                         <Col sm={10}></Col>
 
                         <Col sm={2}>
-                            <Form.Group controlId="button" className="mb-4 mt-2">
-                                <Button variant="outline-primary" className="mr-3">Clear</Button>
-                                <Button variant="primary" type="submit" >Submit</Button>
+                            <Form.Group controlId="button" className="mb-4">
+
+                                <Button variant="outline-primary" className="mt-2 mr-3">Clear</Button>
+
+                                <Button variant="primary" className="mt-2" type="submit" >Submit</Button>
+
                             </Form.Group>
                         </Col>
                     </Form.Row>

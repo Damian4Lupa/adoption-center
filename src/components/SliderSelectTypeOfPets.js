@@ -104,7 +104,7 @@ class Slider extends Component {
               alt="dog"
             />
             <div className="carousel-caption">
-              <h5>Dog</h5>
+              <h5>dog</h5>
             </div>
           </div>
 

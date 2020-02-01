@@ -1,4 +1,13 @@
 
+html {
+  --normal: rgba(0, 123, 255, 0.8);
+  --active: rgb(38, 141, 252);
+  --newsletter:rgba(255, 132, 0, 0.8);
+  --newsletter-active:rgba(255, 132, 0);
+  --letters: #f8f9fa;
+  --background: #252525;
+  --background-filter: rgba(218,218,218,0.9)
+}
 
 .aaa {
     text-align: center;
@@ -10,12 +19,24 @@
 .bbb {
     background-image: url('../images/website/search.png');
     background-size: 20px;
+    padding-left: 30px !important;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.bbb:hover, .bbb:focus, .bbb:active {
+  background-image: url('../images/website/search.png');
+  background-color: var(--background-filter) !important;
+  background-size: 20px;
+  filter: invert(1);
+  padding-left: 30px !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-/* HowWeHelp */
+/*==================== 
+	HowWeHelp 
+====================== */
 
 .marketing {
     margin-top: 4rem;
@@ -38,8 +59,9 @@
     text-align: justify;
 }
 
-
-/* showcase */
+/*==================== 
+	showcase 
+====================== */
 
 .showcase {
     padding: 0 !important;
@@ -77,8 +99,11 @@
     }
   }
 
+/*==================== 
+	team 
+====================== */
 
-  /* team */
+
 
   .team {
     padding-top: 5rem;
@@ -94,7 +119,9 @@
     box-shadow: 0px 5px 5px 0px #adb5bd;
   }
 
-/* Contact */
+/*==================== 
+	Contact 
+====================== */
 
 .adress {
   margin-top: 5rem;
@@ -129,4 +156,24 @@
 /* -moz-border-radius: 10px 10px 10px 10px; */
 /* -webkit-border-radius: 10px 10px 10px 10px; */
 border: 1px solid #e0e0e0;
+}
+
+/*==================== 
+	Error Page
+====================== */
+
+.errorBox {
+  margin: 10rem 11rem;
+  border-radius: 10px;
+border: 1px solid #cccccc;
+}
+
+.errorBox img {
+  filter: hue-rotate(180deg);
+}
+
+.exclamation {
+  filter: hue-rotate(70);
+  /* color: yellow !important; */
+  /* filter: invert(0.5); */
 }

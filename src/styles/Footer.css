@@ -1,20 +1,17 @@
 html {
     --normal: rgba(0, 123, 255, 0.8);
-    --active: rgba(0, 123, 255);
+    --active: rgb(38, 141, 252);
+    --newsletter:rgba(255, 132, 0, 0.8);
+    --newsletter-active:rgba(255, 132, 0);
     --letters: #f8f9fa;
+    --background: #252525;
+    --background2: #222
 }
-
-/* footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  } */
 
 /* Main Footer */
 footer .main-footer{	
     padding: 20px 0;	
-    background: #252525;
+    background: var(--background);
 }
 footer ul{	
     padding-left: 0;	
@@ -23,7 +20,7 @@ footer ul{
 
 /* Copy Right Footer */
 .footer-copyright {	
-    background: #222;	
+    background: var(--background2);	
     padding: 5px 0;
 }
 .footer-copyright .logo {    
@@ -61,7 +58,7 @@ footer ul{
     background: #252525;	
     padding-bottom: 30px;	
     margin-bottom: 30px;	
-    border-bottom: 3px solid #222;}
+    border-bottom: 3px solid var(--background2);}
 
 
 /* Footer transparent */
@@ -101,10 +98,18 @@ footer.light .footer-copyright{
     color: var(--letters) !important;
 }
 
-.btn-register:hover {
+/* .btn-register:hover, {
     background-color: var(--active) !important;
+} */
+
+.donate {
+    background-color: var(--normal) !important;
+    color: var(--letters) !important;  
 }
 
+.donate:hover {
+    background-color: var(--active) !important;
+}
 
 /*==================== 
 	Widgets 
@@ -216,4 +221,28 @@ transition: all 250ms ease-in-out 0s;
 
 .social-float {
     margin-left: -1rem;
+}
+
+/* Newsletter */
+
+.newsletter {
+    background-image: url('../images/website/envelope.svg');
+    background-color: var(--newsletter) !important;
+    color: var(--letters) !important;
+    background-size: 20px;
+    padding-left: 30px !important;
+    filter: invert(1);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.newsletter:hover, .newsletter:focus, .newsletter:active {
+    background-image: url('../images/website/envelope.svg');
+    background-color: var(--newsletter-active) !important;
+    color: var(--letters) !important;
+    background-size: 20px;
+    padding-left: 30px !important;
+    filter: invert(1);
+    background-repeat: no-repeat;
+    background-position: center;
 }

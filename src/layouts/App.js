@@ -13,6 +13,7 @@ import Contact from '../pages/Contact'
 import FindAPet from '../pages/FindAPet'
 import GetInvolved from '../pages/GetInvolved'
 import PetCareAndHealth from '../pages/PetCareAndHealth'
+import ErrorPage from '../pages/ErrorPage'
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
             <Route path="/FindAPet" component={FindAPet} />
             <Route path="/GetInvolved" component={GetInvolved} />
             <Route path="/PetCareAndHealth" component={PetCareAndHealth} />
-            {/* <Route component={ErrorPage} /> */}
+            <Route component={ErrorPage} />
           </Switch>
 
           <Footer />
