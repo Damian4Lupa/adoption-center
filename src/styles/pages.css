@@ -128,7 +128,6 @@ html {
 }
 
 .adress p {
-  /* display: inline-block; */
   margin-left: 3rem;
 }
 
@@ -153,8 +152,6 @@ html {
 
 .writeToUs {
   border-radius: 5px 5px 5px 5px;
-/* -moz-border-radius: 10px 10px 10px 10px; */
-/* -webkit-border-radius: 10px 10px 10px 10px; */
 border: 1px solid #e0e0e0;
 }
 
@@ -163,17 +160,19 @@ border: 1px solid #e0e0e0;
 ====================== */
 
 .errorBox {
-  margin: 10rem 11rem;
+margin: 30vh 12vw;
+  /* margin: 12rem 11rem; */
   border-radius: 10px;
 border: 1px solid #cccccc;
 }
 
 .errorBox img {
-  filter: hue-rotate(180deg);
+  display: block;
+  margin-top: 2rem;
+margin-left: auto;
+margin-right: auto;
+/* width: 50%; */
+filter: invert(0.4);
 }
 
-.exclamation {
-  filter: hue-rotate(70);
-  /* color: yellow !important; */
-  /* filter: invert(0.5); */
-}
+

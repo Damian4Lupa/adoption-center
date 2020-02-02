@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Container, Form, InputGroup, Button, FormControl } from 'react-bootstrap'
+import { Row, Col, Container} from 'react-bootstrap'
 import '../styles/Pages.css'
 import Slider from '../components/SliderSelectTypeOfPets'
 import Rabbit from '../components/Rabbit'
@@ -28,7 +28,7 @@ class FindAPet extends Component {
   }
 
   render() {
-    console.log(this.state.breed)
+    // console.log(this.state.breed)
     return (
 
       <Container>
