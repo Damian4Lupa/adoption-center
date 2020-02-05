@@ -4,19 +4,18 @@ import Slider from '../components/SliderHowWeHelp'
 import Counter from '../components/Counter'
 import '../styles/Pages.css'
 
-import test from '../images/testSlider.png'
+// import test from '../images/testSlider.png'
 import testFoto from '../images/team.jpg'
+import dog from '../images/website/HowWeHelp/dog.png'
+import cat from '../images/website/HowWeHelp/cat.png'
+import rabbit from '../images/website/HowWeHelp/rabbit.png'
 
 const HowWeHelp = () => {
 
     return (
         <>
 
-
-            <div className="mt-0">
-                <Slider />
-            </div>
-
+            <Slider />
 
             <Container>
 
@@ -26,7 +25,7 @@ const HowWeHelp = () => {
 
                         <div className="col-lg-4">
 
-                            <img src={test} alt="" height="70" />
+                            <img src={dog} width="260" />
 
                             <h2>Heading</h2>
                             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
@@ -35,7 +34,7 @@ const HowWeHelp = () => {
 
                         <div className="col-lg-4">
 
-                            <img src={test} alt="" height="70" />
+                            <img src={rabbit} width="150" />
 
                             <h2>Heading</h2>
                             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -44,7 +43,7 @@ const HowWeHelp = () => {
 
                         <div className="col-lg-4">
 
-                            <img src={test} alt="" height="70" />
+                            <img src={cat} width="255" />
 
                             <h2>Heading</h2>
                             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>

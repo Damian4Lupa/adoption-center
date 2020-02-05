@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Carousel } from 'react-bootstrap'
-import '../styles/Slider.css'
+import '../styles/SliderTypeOfPets.css'
 import $ from 'jquery'
 
 import dog from '../images/website/dog.png'

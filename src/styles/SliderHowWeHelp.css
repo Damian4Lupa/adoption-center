@@ -1,0 +1,16 @@
+
+#myCarousel img {
+    /* width: 100%; */
+    /* margin-top: 5%; */
+    object-fit: cover;
+}
+
+/* #myCarousel img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#myCarousel img:nth-of-type(3) {
+    width: 100%;
+    object-fit: cover;
+} */

@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
+import '../styles/SliderHowWeHelp.css'
 // import test from '../images/website/logo.png'
-import test from '../images/testSlider.png'
+// import test from '../images/testSlider.png'
+
+import FindAPet from '../images/website/HowWeHelp/FindAPet.jpg'
+import HowWeHelp from '../images/website/HowWeHelp/HowWeHelp.jpg'
+import PetCare from '../images/website/HowWeHelp/PetCare.jpg'
+
 
 class SliderHowWeHelp extends Component {
     state = {}
@@ -16,7 +22,7 @@ class SliderHowWeHelp extends Component {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
 
-                        <img src={test} width="100%" height="500" alt="" />
+                        <img src={HowWeHelp} width="100%" height="500" alt="" />
 
                         <div className="container">
                             <div className="carousel-caption text-left">
@@ -28,7 +34,7 @@ class SliderHowWeHelp extends Component {
                     </div>
                     <div className="carousel-item">
 
-                        <img src={test} width="100%" height="500" alt="" />
+                        <img src={FindAPet} width="100%" height="500" alt="" />
 
                         <div className="container">
                             <div className="carousel-caption">
@@ -40,7 +46,7 @@ class SliderHowWeHelp extends Component {
                     </div>
                     <div className="carousel-item">
 
-                        <img src={test} width="100%" height="500" alt="" />
+                        <img src={PetCare} width="100%" height="500" alt="" />
 
                         <div className="container">
                             <div className="carousel-caption text-right">
