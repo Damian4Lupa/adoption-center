@@ -50,13 +50,14 @@ html {
   /* width: 50%; */
 }
 
-.marketing h2 {
+/* .marketing h2 {
     text-align: center;
     margin: 1.5rem;
-}
+} */
 
 .marketing p {
     text-align: justify;
+    margin: 1.5rem 0.5rem;
 }
 
 /*==================== 
@@ -84,13 +85,25 @@ html {
     background-size: cover;
   }
   
-.test {
+/* .test {
     background-image: url('../images/testFoto.jpg');
-}
+} */
 
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
+}
+
+.img-adoptedPets {
+  background-image: url('../images/website//HowWeHelp/AdoptedPets.jpg');
+}
+
+.img-donors {
+  background-image: url('../images/website//HowWeHelp/donors.jpg');
+}
+
+.img-volunteers {
+  background-image: url('../images/website//HowWeHelp/volunteers.jpg');
 }
 
   @media (min-width: 768px) {

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import '../styles/SliderHowWeHelp.css'
-// import test from '../images/website/logo.png'
-// import test from '../images/testSlider.png'
 
 import FindAPet from '../images/website/HowWeHelp/FindAPet.jpg'
 import HowWeHelp from '../images/website/HowWeHelp/HowWeHelp.jpg'
@@ -14,7 +12,7 @@ class SliderHowWeHelp extends Component {
         return (
 
             <div id="myCarousel" className="carousel slide" data-ride="carousel">
-                <ol className="carousel-indicators">
+                <ol className="carousel-pointer">
                     <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1" className=""></li>
                     <li data-target="#myCarousel" data-slide-to="2" className=""></li>
