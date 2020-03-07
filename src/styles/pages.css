@@ -1,30 +1,31 @@
-
 html {
   --normal: rgba(0, 123, 255, 0.8);
   --active: rgb(38, 141, 252);
-  --newsletter:rgba(255, 132, 0, 0.8);
-  --newsletter-active:rgba(255, 132, 0);
+  --newsletter: rgba(255, 132, 0, 0.8);
+  --newsletter-active: rgba(255, 132, 0);
   --letters: #f8f9fa;
   --background: #252525;
-  --background-filter: rgba(218,218,218,0.9)
+  --background-filter: rgba(218, 218, 218, 0.9)
 }
 
 .aaa {
-    text-align: center;
-    vertical-align: middle;
-    font-weight: bold;
-    margin: 25px 0;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  margin: 25px 0;
 }
 
 .bbb {
-    background-image: url('../images/website/search.png');
-    background-size: 20px;
-    padding-left: 30px !important;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url('../images/website/search.png');
+  background-size: 20px;
+  padding-left: 30px !important;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.bbb:hover, .bbb:focus, .bbb:active {
+.bbb:hover,
+.bbb:focus,
+.bbb:active {
   background-image: url('../images/website/search.png');
   background-color: var(--background-filter) !important;
   background-size: 20px;
@@ -39,12 +40,12 @@ html {
 ====================== */
 
 .marketing {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .marketing img {
-    margin-top: 2rem;
-    display: block;
+  margin-top: 2rem;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   /* width: 50%; */
@@ -56,8 +57,8 @@ html {
 } */
 
 .marketing p {
-    text-align: justify;
-    margin: 1.5rem 0.5rem;
+  text-align: justify;
+  margin: 1.5rem 0.5rem;
 }
 
 /*==================== 
@@ -65,33 +66,33 @@ html {
 ====================== */
 
 .showcase {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .showcase h2 {
-    text-align: center; 
+  text-align: center;
 }
 
 .showcase p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .showcase .showcase-text {
-    padding: 5rem !important;
-  }
-  
-  .showcase .showcase-img {
-    min-height: 30rem;
-    background-size: cover;
-  }
-  
+  padding: 5rem !important;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
 /* .test {
     background-image: url('../images/testFoto.jpg');
 } */
 
 .lead {
-    font-size: 1.25rem;
-    font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .img-adoptedPets {
@@ -106,11 +107,11 @@ html {
   background-image: url('../images/website//HowWeHelp/volunteers.jpg');
 }
 
-  @media (min-width: 768px) {
-    .showcase .showcase-text {
-      padding: 7rem;
-    }
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
   }
+}
 
 /*==================== 
 	team 
@@ -118,19 +119,19 @@ html {
 
 
 
-  .team {
-    padding-top: 5rem;
-    padding-bottom: 7rem;
-  }
-  
-  .team .team-item {
-    max-width: 18rem;
-  }
-  
-  .team .team-item img {
-    max-width: 12rem;
-    box-shadow: 0px 5px 5px 0px #adb5bd;
-  }
+.team {
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+
+.team .team-item {
+  max-width: 18rem;
+}
+
+.team .team-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
 
 /*==================== 
 	Contact 
@@ -155,8 +156,8 @@ html {
 }
 
 .map {
-  width:100%;
-   height:365px;
+  width: 100%;
+  height: 365px;
 }
 
 .message {
@@ -165,7 +166,7 @@ html {
 
 .writeToUs {
   border-radius: 5px 5px 5px 5px;
-border: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
 }
 
 /*==================== 
@@ -173,19 +174,38 @@ border: 1px solid #e0e0e0;
 ====================== */
 
 .errorBox {
-margin: 30vh 12vw;
+  margin: 30vh 12vw;
   /* margin: 12rem 11rem; */
   border-radius: 10px;
-border: 1px solid #cccccc;
+  border: 1px solid #cccccc;
 }
 
 .errorBox img {
   display: block;
   margin-top: 3rem;
-margin-left: auto;
-margin-right: auto;
-/* width: 50%; */
-filter: invert(0.4);
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  filter: invert(0.4);
 }
 
+/*==================== 
+	Pet Care And Health
+====================== */
 
+.tab-pane .fade p {
+  text-align: justify;
+}
+
+.TabsPet {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5vh 0vh 5vh 0vh;
+  padding-right: 2vw;
+
+}
+
+.tabPet {
+  margin: 5vh 0vh 5vh 0vh;
+  /* padding-left: 30px !important; */
+}

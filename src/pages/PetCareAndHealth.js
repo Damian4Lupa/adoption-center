@@ -1,38 +1,29 @@
 import React from 'react';
-import { Container } from 'react-bootstrap'
+import { Container, Tabs, Tab } from 'react-bootstrap'
+import '../styles/Pages.css'
 
 import Rabbit from '../components/PetCareRabbit'
+import Dog from '../components/PetCareDog'
+import Cat from '../components/PetCareCat'
 
 const PetCareAndHealth = () => {
 
     return (
-        <Container className="my-5">
+        <Container className="mb-5">
 
-            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                <li class="nav-item mx-5">
-                    <a class="nav-link" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" ></a>
-                </li>
+            <Tabs justify defaultActiveKey="dog" id="PetCareAndHealth" className="TabsPet my-5" >
+                <Tab eventKey="" title="" disabled></Tab>
 
-                <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Dog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Cat</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Rabbit</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" ></a>
-                </li>
-            </ul>
-
-            <div class="tab-content nav-justified mt-4" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><Rabbit /></div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><Rabbit /></div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><Rabbit /></div>
-            </div>
+                <Tab eventKey="dog" title="Dog" className="tabPet">
+                    <Dog />
+                </Tab>
+                <Tab eventKey="cat" title="Cat" className="tabPet">
+                    <Cat />
+                </Tab>
+                <Tab eventKey="rabbit" title="Rabbit" className="tabPet">
+                    <Rabbit />
+                </Tab>
+            </Tabs>
 
         </Container>
 
