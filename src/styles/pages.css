@@ -209,3 +209,38 @@ html {
   margin: 5vh 0vh 5vh 0vh;
   /* padding-left: 30px !important; */
 }
+
+/*==================== 
+	Get Involved
+====================== */
+
+.getInvolved img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+}
+
+.getInvolved h4 {
+  text-align: center;
+  margin: 3vh 0 2vh 0;
+}
+
+.getInvolved p {
+  text-align: justify;
+  margin: 0 1vw 0 1vw;
+}
+
+/*==================== 
+	Get Involved
+====================== */
+
+.adoptionInfo b {
+  margin-left: 1vw;
+  padding: 1vh 0 1vh 0;
+}
+
+.adoptionInfo p {
+  margin: 0 3vw 0 3vw;
+  padding: 1vh 0 1vh 0;
+}
