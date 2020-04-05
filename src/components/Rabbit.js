@@ -27,7 +27,7 @@ class Rabbit extends Component {
   render() {
     return (
 
-      <Form>
+      <Form controlId="rabbit">
 
         <Form.Group className="aaa" controlId="breed">
           <Form.Label>BREED</Form.Label>
